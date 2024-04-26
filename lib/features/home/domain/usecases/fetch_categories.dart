@@ -7,6 +7,6 @@ import 'package:dartz/dartz.dart';
 class FetchCategories {
 
   Future<Either<Failure, List<CategoryEntity>>> call() async {
-    return locator<CategoryRepsoitoryImplementation>().getCategories();
+    return locator<CategoryRepsoitory>().getCategories();
   }
 }
